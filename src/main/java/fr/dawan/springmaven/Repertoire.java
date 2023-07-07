@@ -14,11 +14,12 @@ public class Repertoire {
     private PersonneMapper mapper;
 
     @Autowired
-    public Repertoire(Personne personne, PersonneMapper mapper) {
-        this.mapper = mapper;
+    public Repertoire(Personne personne) {
+        System.out.println("\u001B[36mRepertoire.Repertoire\u001B[0m");
+        //this.mapper = mapper;
 
         contacts = List.of(
-                mapper.toDto(personne),
+                //mapper.toDto(personne),
                 new PersonneDto(),
                 new PersonneDto("Boutry", "Maxime"));
     }
