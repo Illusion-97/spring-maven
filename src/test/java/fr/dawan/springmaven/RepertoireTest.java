@@ -14,7 +14,7 @@ class RepertoireTest {
     @Test
     void getNomFromIndex() {
         // Arrange
-        int index = 2;
+        int index = 1;
         String expected = "Boutry";
         // Act
         String result = repertoire.getNomFromIndex(index);
